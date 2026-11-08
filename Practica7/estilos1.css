@@ -1,0 +1,227 @@
+/* Selecciona todos los elementos de la página */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Configuración general del cuerpo del documento */
+body{
+    font-family:'JetBrains Mono', Consolas, monospace;
+    background-color:#0B0B0F;
+    color:#E4E4E7;
+    line-height:1.6;
+    transition:background-color .4s;
+}
+
+/* Estilo del encabezado */
+header{
+    background:linear-gradient(135deg, #1A0B2E, #0B0B0F);
+    border-bottom:2px solid #A3FF12;
+    color:#A3FF12;
+    text-align:center;
+    padding:30px 20px;
+}
+
+/* Logo */
+.logo{
+    width:70px;
+    height:70px;
+    color:#A3FF12;
+    filter:drop-shadow(0 0 10px #A3FF12);
+}
+
+/* Título principal */
+header h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:32px;
+    letter-spacing:3px;
+    margin-top:10px;
+}
+
+/* Subtítulo */
+.subtitulo{
+    color:#A1A1AA;
+    font-size:14px;
+}
+
+/* Estilo del menú de navegación */
+nav{
+    background-color:#121218;
+    border-bottom:1px solid #27272A;
+}
+
+/* Configuración de la lista del menú */
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+/* Configuración de cada opción del menú */
+nav li{
+    padding:15px 25px;
+    color:#E4E4E7;
+    cursor:pointer;
+    transition:.3s;
+}
+
+/* Cambia el color cuando el mouse pasa sobre la opción */
+nav li:hover{
+    background-color:#8B5CF6;
+    color:#0B0B0F;
+}
+
+/* Configuración general de las secciones */
+section{
+    width:90%;
+    max-width:900px;
+    margin:25px auto;
+    padding:25px;
+    background-color:#16161D;
+    border:1px solid #27272A;
+    border-radius:14px;
+    box-shadow:0 0 20px rgba(139,92,246,.15);
+}
+
+/* Títulos de segundo nivel */
+section h2{
+    font-family:'Space Grotesk', sans-serif;
+    text-align:center;
+    color:#8B5CF6;
+    margin-bottom:20px;
+}
+
+/* Imagen */
+#imagen{
+    display:block;
+    width:220px;
+    margin:10px auto;
+    border:3px solid #A3FF12;
+    border-radius:14px;
+    box-shadow:0 0 15px rgba(163,255,18,.4);
+}
+
+/* Contenedor de botones */
+.botones{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Botones */
+button{
+    background-color:transparent;
+    color:#A3FF12;
+    border:2px solid #A3FF12;
+    padding:10px 20px;
+    margin:8px;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
+    transition:.3s;
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button:hover{
+    background-color:#A3FF12;
+    color:#0B0B0F;
+    box-shadow:0 0 15px #A3FF12;
+}
+
+/* Configuración del formulario */
+form{
+    width:70%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Etiquetas */
+label{
+    font-weight:bold;
+    color:#C4B5FD;
+    margin-top:14px;
+}
+
+/* Cuadros de texto, fecha y lista */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    background-color:#0B0B0F;
+    color:#E4E4E7;
+    border:1px solid #3F3F46;
+    border-radius:8px;
+    font-family:'JetBrains Mono', monospace;
+    color-scheme:dark;
+}
+
+/* Efecto al seleccionar un campo */
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#8B5CF6;
+    box-shadow:0 0 8px #8B5CF6;
+}
+
+/* Casilla de verificación */
+.check{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:normal;
+    color:#E4E4E7;
+}
+
+.check input{
+    width:18px;
+    height:18px;
+    accent-color:#A3FF12;
+}
+
+/* Botón Enviar */
+input[type="submit"]{
+    background-color:#8B5CF6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    margin-top:20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:16px;
+    transition:.3s;
+}
+
+/* Efecto del botón Enviar */
+input[type="submit"]:hover{
+    background-color:#6D28D9;
+    box-shadow:0 0 15px #8B5CF6;
+}
+
+/* Mensaje mostrado por JavaScript */
+#mensaje{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#A3FF12;
+    margin-top:20px;
+}
+
+/* Pie de página */
+footer{
+    background-color:#121218;
+    border-top:2px solid #8B5CF6;
+    color:#A1A1AA;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    font-size:13px;
+}
